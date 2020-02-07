@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-
+    
     
     @IBAction func registerPressed(_ sender: UIButton) {
         
@@ -22,11 +22,14 @@ class RegisterViewController: UIViewController {
         {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    print(e)
+                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
                 else
                 {
-                    
+                    //User created successfully --> Navigate to the chat view controller
+                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
                 }
             }
         }
