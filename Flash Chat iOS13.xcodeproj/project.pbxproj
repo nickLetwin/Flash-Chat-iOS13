@@ -19,6 +19,9 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		48E0DF574EFFE425E86522C6 /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37D5A11BA81B13CD1E69AB5 /* Pods_Flash_Chat_iOS13.framework */; };
 		6413E52D23F1B867009D355B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413E52C23F1B867009D355B /* Constants.swift */; };
+		6413E52F23F1BBCF009D355B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413E52E23F1BBCF009D355B /* Message.swift */; };
+		6413E53223F1C16E009D355B /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413E53023F1C16E009D355B /* MessageCell.swift */; };
+		6413E53323F1C16E009D355B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6413E53123F1C16E009D355B /* MessageCell.xib */; };
 		6479A90D23EE0D6F00B622EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6479A90C23EE0D6F00B622EF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6413E52C23F1B867009D355B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6413E52E23F1BBCF009D355B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Message.swift"; sourceTree = SOURCE_ROOT; };
+		6413E53023F1C16E009D355B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		6413E53123F1C16E009D355B /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		6479A90C23EE0D6F00B622EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B37D5A11BA81B13CD1E69AB5 /* Pods_Flash_Chat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE117C33DA7CA7C72C522BA0 /* Pods-Flash Chat iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				6413E53023F1C16E009D355B /* MessageCell.swift */,
+				6413E53123F1C16E009D355B /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6413E52E23F1BBCF009D355B /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
+				6413E53323F1C16E009D355B /* MessageCell.xib in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				6479A90D23EE0D6F00B622EF /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
@@ -255,8 +265,10 @@
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				6413E52D23F1B867009D355B /* Constants.swift in Sources */,
+				6413E52F23F1BBCF009D355B /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				6413E53223F1C16E009D355B /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
